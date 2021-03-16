@@ -1,4 +1,4 @@
-name: build
+name: buildandtest
 
 on: push
 
@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
       - name: Checkout code
+        uses: actions/checkout@v2
         
-        run: |
+      - run: |
           cd lab1/
-          Checkout code main1_test
-          ./main1_test
+          make lab1test
+          ./test
+
