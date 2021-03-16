@@ -13,6 +13,6 @@ jobs:
       - name: Checkout code
         
         run: |
-          cd lab1
+          cd lab1/
           Checkout code main1_test
           ./main1_test
