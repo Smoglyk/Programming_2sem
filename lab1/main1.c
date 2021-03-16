@@ -17,7 +17,6 @@ int main()
     int num3=(num*1000-num1*100-num2*10);   
     int sum=num1+num2+num3;
 
-    printf("%d",num3);
     printf("%d",sum);
 	return 0;
 }
